@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIN &amp; BVN Registration UK – NIMC Diaspora Enrolment Hub</title>
+  <meta name="description" content="NINBVN.org is an authorised NIMC enrolment partner. Complete your Nigerian National Identification Number (NIN) and Bank Verification Number (BVN) registration in the UK and Germany." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%234F46E5'/><text y='22' x='5' font-size='18' fill='white' font-family='sans-serif' font-weight='bold'>N</text></svg>" />
+  <link rel="stylesheet" href="css/style.prefixed.css?v=1.2" />
+  <script defer src="js/script.es5.js"></script>
+  <link rel="canonical" href="https://ninbvn.org/" />
+  
+  <style>
+    /* ── Premium Layout & Redesign Styles ── */
+    :root {
+      --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+      --gradient-card: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+      --glow-color: rgba(99, 102, 241, 0.15);
+    }
+
+    /* Enhanced Card Hover */
+    .service-card {
+      background: var(--gradient-card) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.4s ease, 
+                  box-shadow 0.4s ease !important;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .service-card:hover {
+      transform: translateY(-8px) !important;
+      border-color: rgba(99, 102, 241, 0.4) !important;
+      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15), 0 0 0 1px rgba(99, 102, 241, 0.2) !important;
+    }
+
+    /* Premium Steps flow */
+    .timeline-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      position: relative;
+      margin-top: 3.5rem;
+    }
+    @media (max-width: 900px) {
+      .timeline-steps {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    .step-card {
+      background: var(--gradient-card);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+    }
+    .step-card:hover {
+      border-color: rgba(6, 182, 212, 0.4);
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.1);
+      transform: translateY(-4px);
+    }
+    .step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .step-badge {
+      font-size: 2.5rem;
+      font-weight: 900;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      font-family: var(--font-head);
+    }
+    .step-icon {
+      font-size: 1.75rem;
+      background: rgba(255, 255, 255, 0.04);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .step-card h3 {
+      font-size: 1.25rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .step-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* FAQ interactive styles */
+    .faq-item {
+      transition: all 0.3s ease;
+    }
+    .faq-item:hover {
+      border-color: rgba(99, 102, 241, 0.3) !important;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.05);
+    }
+    .faq-question[aria-expanded="true"] .faq-icon {
+      transform: rotate(45deg);
+      color: var(--emerald) !important;
+    }
+    .faq-question[aria-expanded="true"] {
+      background: rgba(255, 255, 255, 0.02) !important;
+    }
+
+    /* Custom timeline connector line for desktop */
+    @media (min-width: 901px) {
+      .timeline-steps::before {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(79,70,229,0.1) 0%, rgba(6,182,212,0.4) 50%, rgba(79,70,229,0.1) 100%);
+        z-index: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ── Navbar ── -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">NIN<span class="accent">BVN</span>.org</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="nin.html">NIN Enrolment</a></li>
+          <li><a href="nin-modification.html">NIN Modification</a></li>
+          <li><a href="bvn.html">BVN Enrolment</a></li>
+          <li><a href="blog.html">Guides &amp; Articles</a></li>
+          <li><a href="book-appointment.html" class="btn-primary nav-cta">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="main">
+    <div class="hero-orb" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="hero-eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          Authorised NIMC Enrolment Partner
+        </div>
+        <h1>Nigerian NIN &amp; BVN Enrolment <br><span class="gradient-text">From The UK &amp; Germany</span></h1>
+        <p>Complete your Nigerian National Identification Number (NIN) registration, BVN capturing, and document processing without travelling to Nigeria. Book a secure appointment at our certified local centres.</p>
+        <div class="hero-actions">
+          <a href="book-appointment.html" class="btn-primary">Book Enrolment Appointment</a>
+          <a href="https://wa.me/447450444858" class="btn-secondary">💬 WhatsApp Enrolment Desk</a>
+        </div>
+        <div class="hero-trust-bar">
+          <span>✅ NIMC-Licensed Partner</span>
+          <span>✅ Same-Day Transaction Slip</span>
+          <span>✅ Adults &amp; Children Enrolment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services Section ── -->
+  <section class="services-section container">
+    <div class="section-header reveal">
+      <span class="section-label">Our Core Services</span>
+      <h2>NIMC Identity &amp; Verification Services</h2>
+      <p class="section-subtitle">Official biometric capturing and database updates for the Nigerian diaspora.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service 1: New NIN -->
+      <a href="nin.html" class="service-card reveal delay-1">
+        <div class="card-icon">🪪</div>
+        <div class="card-title">New NIN Enrolment</div>
+        <p class="card-description">Official National Identification Number registration for adults and children (including newborns) with biometrics capturing.</p>
+        <span class="card-link">Start Registration →</span>
+      </a>
+
+      <!-- Service 2: NIN Modification -->
+      <a href="nin-modification.html" class="service-card reveal delay-2">
+        <div class="card-icon">✍️</div>
+        <div class="card-title">NIN Modification</div>
+        <p class="card-description">Correct misspelled names, update dates of birth, change contact details, or link a new phone number to your database.</p>
+        <span class="card-link">Modify Record →</span>
+      </a>
+
+      <!-- Service 3: BVN Enrolment -->
+      <a href="bvn.html" class="service-card reveal delay-3">
+        <div class="card-icon">🏦</div>
+        <div class="card-title">BVN Enrolment &amp; Linkage</div>
+        <p class="card-description">Get your Bank Verification Number or link your existing BVN with your newly issued NIN to secure your accounts.</p>
+        <span class="card-link">Register BVN →</span>
+      </a>
+
+      <!-- Service 4: Slip Retrieval -->
+      <a href="nin-slip-retrieval.html" class="service-card reveal delay-1">
+        <div class="card-icon">🔍</div>
+        <div class="card-title">NIN Slip Retrieval</div>
+        <p class="card-description">Lost your NIN slip or forgot your 11-digit number? We can securely verify your identity and retrieve your official record.</p>
+        <span class="card-link">Retrieve Slip →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── How It Works (Redesigned Perfectly) ── -->
+  <section class="how-it-works" style="padding: 6rem 0; background: var(--navy-dark); border-top: 1px solid var(--navy-border);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center; margin-bottom: 2rem;">
+        <span class="section-label" style="font-size: .75rem; font-weight: 700; text-transform: uppercase; color: var(--indigo-light); letter-spacing: .08em; display: block; margin-bottom: .5rem;">Enrolment Process</span>
+        <h2 style="font-size: 2.25rem; font-weight: 700; color: var(--white); margin: 0 0 .5rem;">How To Get Your NIN or BVN</h2>
+        <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-muted); margin: 0; max-width: 600px; margin-left: auto; margin-right: auto;">Secure, fast, and fully licensed diaspora registration process.</p>
+      </div>
+
+      <div class="timeline-steps">
+        <!-- Step 1 -->
+        <div class="step-card reveal delay-1">
+          <div class="step-header">
+            <span class="step-badge">01</span>
+            <span class="step-icon">📅</span>
+          </div>
+          <h3>Book Online</h3>
+          <p>Pick your service, select your nearest centre, and secure your biometric slot online in under 2 minutes.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card reveal delay-2">
+          <div class="step-header">
+            <span class="step-badge">02</span>
+            <span class="step-icon">📂</span>
+          </div>
+          <h3>Visit Centre</h3>
+          <p>Bring your original documents (such as passport or birth certificate) to your chosen local centre location.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card reveal delay-3">
+          <div class="step-header">
+            <span class="step-badge">03</span>
+            <span class="step-icon">🪪</span>
+          </div>
+          <h3>Biometric Capture</h3>
+          <p>Complete your physical biometric capture (fingerprints &amp; face photo) in a secure, quick 15-minute appointment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Latest Guides & Blog Section ── -->
+  <section class="section section-mid" style="padding: 5rem 0; background: var(--navy-mid); border-bottom: 1px solid var(--navy-border);">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom: 3rem; text-align: center;">
+        <span class="section-label" style="font-size: .75rem; font-weight: 700; text-transform: uppercase; color: var(--indigo-light); letter-spacing: .08em; display: block; margin-bottom: .5rem;">Resources &amp; News</span>
+        <h2 style="font-size: 2.25rem; font-weight: 700; color: var(--white); margin: 0 0 .5rem;">Latest Updates &amp; Diaspora Guides</h2>
+        <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-muted); margin: 0;">Read our helpful guides to navigate Nigerian identity, passport, and biometrics requirements.</p>
+      </div>
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2.5rem;">
+        <article class="service-card reveal delay-1" style="display: flex; flex-direction: column; height: 100%; cursor: pointer;" onclick="location.href='blog-passport-from-uk.html'">
+          <div class="card-icon" style="font-size: 2rem; margin-bottom: 1rem;">🪪</div>
+          <div class="card-title" style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--white); font-weight:600;">How to Renew Your Nigerian Passport from the UK</div>
+          <p class="card-description" style="flex: 1; margin: 0 0 1.25rem; font-size: .9rem; color: var(--text-muted); line-height: 1.6;">A complete, step-by-step guide explaining the renewal process, required documents, fees, and location options in the UK.</p>
+          <span class="card-link" style="color: var(--indigo-light); font-weight:600; font-size: .9rem;">Read Guide →</span>
+        </article>
+        <article class="service-card reveal delay-2" style="display: flex; flex-direction: column; height: 100%; cursor: pointer;" onclick="location.href='blog-children-nin.html'">
+          <div class="card-icon" style="font-size: 2rem; margin-bottom: 1rem;">👶</div>
+          <div class="card-title" style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--white); font-weight:600;">NIN Enrolment for Children: A Parents' Guide</div>
+          <p class="card-description" style="flex: 1; margin: 0 0 1.25rem; font-size: .9rem; color: var(--text-muted); line-height: 1.6;">What you need to know about registering children and babies for their NIN in the UK, including parent consent requirements.</p>
+          <span class="card-link" style="color: var(--indigo-light); font-weight:600; font-size: .9rem;">Read Guide →</span>
+        </article>
+        <article class="service-card reveal delay-3" style="display: flex; flex-direction: column; height: 100%; cursor: pointer;" onclick="location.href='blog-nin-vs-bvn.html'">
+          <div class="card-icon" style="font-size: 2rem; margin-bottom: 1rem;">🔗</div>
+          <div class="card-title" style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--white); font-weight:600;">Connecting NIN and BVN: Why It Matters</div>
+          <p class="card-description" style="flex: 1; margin: 0 0 1.25rem; font-size: .9rem; color: var(--text-muted); line-height: 1.6;">Learn why linking your Bank Verification Number to your National Identity Number is critical to keep your Nigerian bank accounts active.</p>
+          <span class="card-link" style="color: var(--indigo-light); font-weight:600; font-size: .9rem;">Read Guide →</span>
+        </article>
+      </div>
+      <p style="text-align: center; margin-top: 2.5rem;"><a href="blog.html" class="btn-secondary">View All Articles &amp; Guides</a></p>
+    </div>
+  </section>
+
+  <!-- ── FAQ Section ── -->
+  <section class="section section-dark" style="padding: 5rem 0; border-bottom: 1px solid var(--navy-border);">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom: 3rem; text-align: center;">
+        <span class="section-label" style="font-size: .75rem; font-weight: 700; text-transform: uppercase; color: var(--indigo-light); letter-spacing: .08em; display: block; margin-bottom: .5rem;">Got Questions?</span>
+        <h2 style="font-size: 2.25rem; font-weight: 700; color: var(--white); margin: 0 0 .5rem;">Frequently Asked Questions</h2>
+        <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-muted); margin: 0;">Find quick answers to common queries about NIN, BVN, and biometrics capture.</p>
+      </div>
+      <div class="faq-list reveal" style="max-width: 800px; margin: 2.5rem auto 0;">
+        <div class="faq-item" style="background: var(--navy-mid); border: 1px solid var(--navy-border); border-radius: var(--radius-md); margin-bottom: 1rem; overflow: hidden;">
+          <button class="faq-question" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem; font-size: 1.05rem; font-weight: 600; color: var(--white); background: none; border: none; text-align: left; cursor: pointer; font-family: var(--font-body); transition: background var(--transition), color var(--transition);">
+            How do I book an appointment for NIN or BVN capture?
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="currentColor" style="width: 18px; height: 18px; transition: transform var(--transition); flex-shrink: 0; color: var(--indigo-light);"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Booking is simple. Call or WhatsApp our support line at <a href="https://wa.me/447450444858">+447450 444858</a>. We'll help you locate your nearest center and reserve a convenient date and time for you and your family.</p></div></div>
+        </div>
+        <div class="faq-item" style="background: var(--navy-mid); border: 1px solid var(--navy-border); border-radius: var(--radius-md); margin-bottom: 1rem; overflow: hidden;">
+          <button class="faq-question" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem; font-size: 1.05rem; font-weight: 600; color: var(--white); background: none; border: none; text-align: left; cursor: pointer; font-family: var(--font-body); transition: background var(--transition), color var(--transition);">
+            What documents do I need to bring to my appointment?
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="currentColor" style="width: 18px; height: 18px; transition: transform var(--transition); flex-shrink: 0; color: var(--indigo-light);"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>For standard NIN enrolment, please bring your valid Nigerian international passport, UK/EU passport, or Biometric Residence Permit (BRP). For minor enrolments, we also require the child's birth certificate and a parent's NIN slip. We check all documentation before your capture begins.</p></div></div>
+        </div>
+        <div class="faq-item" style="background: var(--navy-mid); border: 1px solid var(--navy-border); border-radius: var(--radius-md); margin-bottom: 1rem; overflow: hidden;">
+          <button class="faq-question" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem; font-size: 1.05rem; font-weight: 600; color: var(--white); background: none; border: none; text-align: left; cursor: pointer; font-family: var(--font-body); transition: background var(--transition), color var(--transition);">
+            Is the NIN enrolment process officially licensed?
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="currentColor" style="width: 18px; height: 18px; transition: transform var(--transition); flex-shrink: 0; color: var(--indigo-light);"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. NINBVN.org is a fully licensed NIMC enrolment partner operating via FUWA Agribusiness. We capture biometrics and data using NIMC-approved systems, which upload securely and directly to the NIMC database in Nigeria.</p></div></div>
+        </div>
+        <div class="faq-item" style="background: var(--navy-mid); border: 1px solid var(--navy-border); border-radius: var(--radius-md); margin-bottom: 1rem; overflow: hidden;">
+          <button class="faq-question" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem; font-size: 1.05rem; font-weight: 600; color: var(--white); background: none; border: none; text-align: left; cursor: pointer; font-family: var(--font-body); transition: background var(--transition), color var(--transition);">
+            Do I have to travel all the way to London for my capture?
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="currentColor" style="width: 18px; height: 18px; transition: transform var(--transition); flex-shrink: 0; color: var(--indigo-light);"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p>No, you do not. We have 14+ centers located across Scotland (Aberdeen, Glasgow), England (Birmingham, Leeds, etc.), Wales (Swansea), and Germany (Berlin, Frankfurt, Munich). You can select the center closest to you when booking.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Section ── -->
+  <section class="cta-banner reveal">
+    <div class="container">
+      <h2>Secure Your Biometric Appointment Today</h2>
+      <p>Appointments are required for all physical biometrics captures in the UK and Germany. Protect your identity records today.</p>
+      <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
+        <a href="book-appointment.html" class="btn-primary">Book Now</a>
+        <a href="https://wa.me/447450444858" class="btn-secondary">💬 Message Enrolment Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span class="js-year">2026</span> NINBVN.org. All rights reserved. Authorised NIMC Diaspora Enrolment Agent.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating FAB -->
+  <a href="https://wa.me/447450444858" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.419 5.422 0 12.04 0c3.206.001 6.22 1.248 8.489 3.52 2.269 2.27 3.513 5.287 3.513 8.492-.003 6.62-5.423 12.04-12.04 12.04-2.002-.001-3.972-.5-5.787-1.451L0 24zm6.59-4.846c1.657.983 3.284 1.492 4.908 1.493 5.415 0 9.818-4.405 9.821-9.82.002-2.624-1.012-5.09-2.859-6.94C16.63 2.039 14.167 1.018 11.54 1.017 6.126 1.017 1.724 5.422 1.72 10.838c-.001 1.721.463 3.4 1.343 4.887l-.997 3.642 3.731-.977s.002-.001.003-.001zM17.47 15.35c-.322-.162-1.905-.94-2.202-1.049-.297-.108-.514-.162-.73.162-.217.324-.838 1.049-1.028 1.265-.19.217-.38.243-.7.08-1.748-.873-2.92-1.597-4.089-3.606-.309-.53.309-.492.884-1.64.096-.195.048-.364-.024-.526-.071-.162-.608-1.464-.833-2.006-.22-.53-.443-.457-.608-.466-.157-.008-.338-.01-.52-.01-.182 0-.476.068-.725.342-.249.274-.95 1.028-.95 2.508s1.077 2.906 1.226 3.109c.15.203 2.12 3.237 5.137 4.537.717.31 1.278.494 1.716.633.722.23 1.378.198 1.9.12.58-.088 1.905-.779 2.176-1.493.271-.716.271-1.329.19-1.453-.081-.124-.298-.186-.62-.348z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
