@@ -1,5 +1,5 @@
 /*
- * Eclat Synergy — Complete Stylesheet
+ * NIN-BVN Services — Complete Stylesheet
  * Indigo (#4F46E5) + Emerald (#10B981) on Deep Navy (#0F172A)
  * All class names aligned with actual HTML structure
  */
@@ -9,19 +9,19 @@
 
 /* ─── Design Tokens ────────────────────────────────────────────── */
 :root {
-  --indigo:        #4F46E5;
-  --indigo-dark:   #4338CA;
-  --indigo-light:  #6366F1;
-  --emerald:       #10B981;
-  --emerald-dark:  #059669;
-  --navy:          #0F172A;
-  --navy-mid:      #1E293B;
-  --navy-border:   rgba(148,163,184,0.12);
+  --indigo:        #006633;
+  --indigo-dark:   #004d26;
+  --indigo-light:  #2bd99a;
+  --emerald:       #0ea371;
+  --emerald-dark:  #0a7a55;
+  --navy:          #0b1f17;
+  --navy-mid:      #0f2a20;
+  --navy-border:   rgba(43,217,154,0.18);
   --surface:       #F8FAFC;
   --surface-dark:  #E2E8F0;
-  --text-light:    #F8FAFC;
-  --text-muted:    #94A3B8;
-  --text-dark:     #1E293B;
+  --text-light:    #e9fff5;
+  --text-muted:    #a9e7cf;
+  --text-dark:     #0b1f17;
   --white:         #FFFFFF;
   --warning:       #F59E0B;
   --error:         #EF4444;
@@ -36,7 +36,7 @@
   --shadow-md:  0 4px 12px rgba(0,0,0,.15);
   --shadow-lg:  0 10px 30px rgba(0,0,0,.22);
   --shadow-xl:  0 20px 50px rgba(0,0,0,.30);
-  --glow:       0 0 24px rgba(79,70,229,.35);
+  --glow:       0 0 24px rgba(43,217,154,.25);
 
   --font-body:  'Inter',    -apple-system, BlinkMacSystemFont, sans-serif;
   --font-head:  'Poppins',  var(--font-body);
@@ -81,7 +81,7 @@ body::before {
   content: '';
   position: fixed; inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 15% 15%, rgba(79,70,229,.13) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 15% 15%, rgba(0,102,51,.13) 0%, transparent 60%),
     radial-gradient(ellipse 50% 40% at 85% 85%, rgba(16,185,129,.11) 0%, transparent 60%);
   pointer-events: none;
   z-index: -1;
@@ -150,12 +150,12 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 .btn-primary {
   background: linear-gradient(135deg, var(--indigo), var(--indigo-dark));
   color: var(--white);
-  box-shadow: 0 4px 14px rgba(79,70,229,.35);
+  box-shadow: 0 4px 14px rgba(0,102,51,.35);
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--indigo-light), var(--indigo));
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(79,70,229,.45);
+  box-shadow: 0 8px 24px rgba(0,102,51,.45);
   color: var(--white);
 }
 .btn-primary:active { transform: translateY(0); }
@@ -167,7 +167,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 }
 .btn-secondary:hover {
   border-color: var(--indigo);
-  background: rgba(79,70,229,.1);
+  background: rgba(0,102,51,.1);
   color: var(--text-light);
 }
 
@@ -212,8 +212,18 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   text-decoration: none;
   letter-spacing: -.3px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .nav-logo .accent { color: var(--emerald); }
+
+.logo-img {
+  height: 64px;
+  width: auto;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
 
 /* Desktop nav links */
 .nav-menu {
@@ -248,7 +258,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 .nav-menu > li > button.nav-dropdown-toggle:hover,
 .nav-menu > li > a.active {
   color: var(--white);
-  background: rgba(79,70,229,.12);
+  background: rgba(0,102,51,.12);
 }
 
 .nav-menu > li > a[aria-current="page"] { color: var(--indigo-light); }
@@ -289,7 +299,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   border-radius: var(--radius-sm);
   transition: background var(--transition), color var(--transition);
 }
-.nav-dropdown a:hover { background: rgba(79,70,229,.15); color: var(--white); }
+.nav-dropdown a:hover { background: rgba(0,102,51,.15); color: var(--white); }
 
 /* CTA in nav */
 .nav-cta {
@@ -354,7 +364,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   transition: background var(--transition), color var(--transition);
 }
 .mega-col ul a:hover {
-  background: rgba(79,70,229,.15);
+  background: rgba(0,102,51,.15);
   color: var(--white);
 }
 .mega-col ul a .mega-link-icon {
@@ -513,7 +523,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   content: '';
   position: absolute; inset: 0;
   background:
-    linear-gradient(135deg, rgba(15,23,42,0.85) 0%, rgba(30,41,59,0.85) 100%),
+    linear-gradient(135deg, rgba(11,31,23,0.85) 0%, rgba(15,42,32,0.85) 100%),
     url("../images/hero-bg.png") center/cover no-repeat;
 }
 
@@ -527,8 +537,8 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  background: rgba(79,70,229,.15);
-  border: 1px solid rgba(79,70,229,.3);
+  background: rgba(0,102,51,.15);
+  border: 1px solid rgba(0,102,51,.3);
   color: var(--indigo-light);
   font-size: .8rem;
   font-weight: 600;
@@ -585,7 +595,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   width: clamp(280px, 40vw, 520px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 40%, rgba(79,70,229,.25), rgba(16,185,129,.12), transparent 70%);
+  background: radial-gradient(circle at 30% 40%, rgba(0,102,51,.25), rgba(16,185,129,.12), transparent 70%);
   filter: blur(40px);
   pointer-events: none;
 }
@@ -695,14 +705,14 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-xl);
-  border-color: rgba(79,70,229,.4);
+  border-color: rgba(0,102,51,.4);
 }
 .service-card:hover::before { transform: scaleX(1); }
 
 .card-icon {
   width: 52px; height: 52px;
-  background: rgba(79,70,229,.12);
-  border: 1px solid rgba(79,70,229,.2);
+  background: rgba(0,102,51,.12);
+  border: 1px solid rgba(0,102,51,.2);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -948,9 +958,9 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   text-align: left;
   transition: background var(--transition), color var(--transition);
 }
-.faq-question:hover { background: rgba(79,70,229,.1); color: var(--white); }
+.faq-question:hover { background: rgba(0,102,51,.1); color: var(--white); }
 .faq-question[aria-expanded="true"] {
-  background: rgba(79,70,229,.15);
+  background: rgba(0,102,51,.15);
   color: var(--indigo-light);
 }
 
@@ -984,7 +994,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 /* ─── CTA Banner ────────────────────────────────────────────────── */
 .cta-banner {
   background: linear-gradient(135deg, var(--indigo-dark) 0%, var(--navy-mid) 100%);
-  border: 1px solid rgba(79,70,229,.3);
+  border: 1px solid rgba(0,102,51,.3);
   border-radius: var(--radius-xl);
   padding: 4rem 3rem;
   text-align: center;
@@ -1050,7 +1060,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
   border-radius: var(--radius-sm);
   transition: all var(--transition);
 }
-.toc a:hover { color: var(--indigo-light); background: rgba(79,70,229,.1); }
+.toc a:hover { color: var(--indigo-light); background: rgba(0,102,51,.1); }
 
 /* Content sections */
 .content-section {
@@ -1069,8 +1079,8 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 
 /* Callout box */
 .callout {
-  background: rgba(79,70,229,.08);
-  border: 1px solid rgba(79,70,229,.25);
+  background: rgba(0,102,51,.08);
+  border: 1px solid rgba(0,102,51,.25);
   border-left: 4px solid var(--indigo);
   border-radius: var(--radius-sm);
   padding: 1.25rem 1.5rem;
@@ -1189,7 +1199,7 @@ li { color: var(--text-muted); margin-bottom: .4rem; }
 .form-group textarea:focus {
   outline: none;
   border-color: var(--indigo);
-  box-shadow: 0 0 0 3px rgba(79,70,229,.2);
+  box-shadow: 0 0 0 3px rgba(0,102,51,.2);
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: var(--text-muted); }
@@ -1258,12 +1268,12 @@ table.loc-table {
   border-bottom: 1px solid var(--surface-dark);
 }
 .loc-table tbody tr:nth-child(even) td { background: #F1F5F9; }
-.loc-table tbody tr:hover td { background: rgba(79,70,229,.04); }
+.loc-table tbody tr:hover td { background: rgba(0,102,51,.04); }
 .loc-table a { color: var(--indigo); font-weight: 600; }
 .loc-table a:hover { color: var(--emerald-dark); }
 .loc-table .region-badge {
   display: inline-block;
-  background: rgba(79,70,229,.1);
+  background: rgba(0,102,51,.1);
   color: var(--indigo);
   font-size: .7rem;
   font-weight: 700;
@@ -1320,6 +1330,9 @@ table.loc-table {
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .footer-logo-text .accent { color: var(--emerald); }
 
@@ -1633,7 +1646,7 @@ table.loc-table {
   align-items: center;
 }
 .service-finder-row:last-child { border-bottom: none; }
-.service-finder-row.header { background: rgba(79,70,229,.1); }
+.service-finder-row.header { background: rgba(0,102,51,.1); }
 .service-finder-cell {
   padding: .8rem 1rem;
   font-size: .83rem;
@@ -1783,7 +1796,7 @@ table.loc-table {
 }
 .blog-card-thumb {
   height: 140px;
-  background: linear-gradient(135deg, rgba(79,70,229,.25) 0%, rgba(16,185,129,.15) 100%);
+  background: linear-gradient(135deg, rgba(0,102,51,.25) 0%, rgba(16,185,129,.15) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1850,13 +1863,13 @@ table.loc-table {
   letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--indigo-light);
-  background: rgba(79,70,229,.08);
+  background: rgba(0,102,51,.08);
 }
 .pricing-table td { color: var(--text-muted); }
 .pricing-table td:first-child { color: var(--white); font-weight: 500; }
 .pricing-table td:last-child { color: var(--emerald); font-weight: 700; font-size: 1rem; }
 .pricing-table tr:last-child td { border-bottom: none; }
-.pricing-table tbody tr:hover td { background: rgba(79,70,229,.04); }
+.pricing-table tbody tr:hover td { background: rgba(0,102,51,.04); }
 
 /* ─── Why us / differentiator block ─────────────────────────────── */
 .why-grid {
@@ -1900,7 +1913,7 @@ table.loc-table {
 /* ─── Active nav link ────────────────────────────────────────────── */
 .nav-menu > li > a[aria-current="page"] {
   color: var(--indigo-light) !important;
-  background: rgba(79,70,229,.1) !important;
+  background: rgba(0,102,51,.1) !important;
 }
 
 /* ─── Cross-link cards (within NIN page) ────────────────────────── */

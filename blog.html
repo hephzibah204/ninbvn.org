@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NIN &amp; BVN Guides &amp; Articles | NINBVN.org</title>
+  <title>NIN &amp; BVN Guides &amp; Articles | NIN-BVN Services</title>
   <meta name="description" content="Plain-English guides, checklists and updates for navigating Nigerian National Identification Number (NIN) and Bank Verification Number (BVN) from abroad." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%234F46E5'/><text y='22' x='5' font-size='18' fill='white' font-family='sans-serif' font-weight='bold'>N</text></svg>" />
-  <link rel="stylesheet" href="css/style.prefixed.css?v=1.2" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23006633'/><text y='22' x='5' font-size='18' fill='white' font-family='sans-serif' font-weight='bold'>N</text></svg>" />
+  <link rel="stylesheet" href="css/style.prefixed.css?v=1.3" />
   <script defer src="js/script.es5.js"></script>
   <link rel="canonical" href="https://ninbvn.org/blog.html" />
 </head>
@@ -18,16 +18,86 @@
   <!-- ── Navbar ── -->
   <header class="navbar" role="banner">
     <div class="container nav-container">
-      <a href="index.html" class="nav-logo">NIN<span class="accent">BVN</span>.org</a>
+      <a href="index.html" class="nav-logo"><img src="images/ninbvnlogo.jpg" alt="NIN-BVN Services Logo" class="logo-img"></a>
       <nav aria-label="Main navigation">
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="nin.html">NIN Enrolment</a></li>
-          <li><a href="nin-modification.html">NIN Modification</a></li>
-          <li><a href="bvn.html">BVN Enrolment</a></li>
-          <li><a href="blog.html" class="active">Guides &amp; Articles</a></li>
-          <li><a href="book-appointment.html" class="btn-primary nav-cta">Book Appointment</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-menu" id="nav-menu">
+        <!-- 1. NIN Services (Mega Menu) -->
+        <li class="has-mega-menu">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            NIN Services
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="mega-menu" role="menu">
+            <div class="mega-inner" style="grid-template-columns: 1fr 1fr 280px;">
+              <div class="mega-col">
+                <div class="mega-col-heading">NIN Enrolment &amp; Modification</div>
+                <ul>
+                  <li><a href="nin.html"><span class="mega-link-icon">🪪</span> NIN Enrollment (Child/Adult)</a></li>
+                  <li><a href="nin-modification.html"><span class="mega-link-icon">✍️</span> Name Change</a></li>
+                  <li><a href="nin-modification.html"><span class="mega-link-icon">📅</span> Date of Birth Change</a></li>
+                  <li><a href="nin-suspension.html"><span class="mega-link-icon">🚫</span> NIN Suspension</a></li>
+                  <li><a href="migration.html"><span class="mega-link-icon">🔄</span> Migration</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-heading">NIN Search &amp; Print Slip</div>
+                <ul>
+                  <li><a href="nin-slip-retrieval.html"><span class="mega-link-icon">🔍</span> NIN Slip Retrieval</a></li>
+                  <li><a href="nin-lost-search.html"><span class="mega-link-icon">🔎</span> Lost NIN Search</a></li>
+                </ul>
+              </div>
+              <div class="mega-cta">
+                <h4 class="mega-cta-heading">NIN Help Desk</h4>
+                <p class="mega-cta-body">Fast-track retrievals and modifications directly with accredited agents.</p>
+                <a href="book-appointment.html" class="btn-primary" style="margin-top:0.5rem;">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 2. BVN Services (Dropdown Menu) -->
+        <li style="position: relative;">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            BVN Services
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <ul class="nav-dropdown">
+            <li><a href="bvn.html">BVN Enrollment</a></li>
+            <li><a href="bvn-lost-search.html">Lost BVN Search</a></li>
+          </ul>
+        </li>
+
+        <!-- Other Services (Dropdown Menu) -->
+        <li style="position: relative;">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Other Services
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <ul class="nav-dropdown">
+            <li><a href="passport.html">Passport Processing</a></li>
+            <li><a href="notarisation.html">Notarisation</a></li>
+          </ul>
+        </li>
+
+        <!-- 5. Become an Agent (Dropdown Menu) -->
+        <li style="position: relative;">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Become an Agent
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <ul class="nav-dropdown">
+            <li><a href="become-nin-agent.html">NIN Agent</a></li>
+            <li><a href="become-bvn-agent.html">BVN Agent</a></li>
+          </ul>
+        </li>
+
+        <!-- 4. Guides & Articles -->
+        <li><a href="blog.html">Guides &amp; Articles</a></li>
+
+        <!-- 6. Book Appointment (CTA Button) -->
+        <li><a href="book-appointment.html" class="btn-primary nav-cta">Book Appointment</a></li>
+      </ul>
+    </nav>
       <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
@@ -94,7 +164,7 @@
           <div class="blog-card-body">
             <div class="blog-card-category">NIN · Partners</div>
             <h2 class="blog-card-title">How to Become an NIN Registration Agent Online in Nigeria</h2>
-            <p class="blog-card-excerpt">Learn how to start registering people for NIN, access the NIN agent portal, and partner with a licensed vendor like NINBVN.org.</p>
+            <p class="blog-card-excerpt">Learn how to start registering people for NIN, access the NIN agent portal, and partner with a licensed vendor like NIN-BVN Services.</p>
             <div class="blog-card-meta"><span>June 2026 · 6 min read</span><span class="blog-card-read">Read →</span></div>
           </div>
         </a>
@@ -205,12 +275,12 @@
   <!-- ── Footer ── -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>&copy; <span class="js-year">2026</span> NINBVN.org. All rights reserved. Authorised NIMC Diaspora Enrolment Agent.</p>
+      <p>&copy; <span class="js-year">2026</span> NIN-BVN Services. All rights reserved. Authorised NIMC Diaspora Enrolment Agent.</p>
     </div>
   </footer>
 
   <!-- WhatsApp Floating FAB -->
-  <a href="https://wa.me/447450444858" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/447459788558" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.419 5.422 0 12.04 0c3.206.001 6.22 1.248 8.489 3.52 2.269 2.27 3.513 5.287 3.513 8.492-.003 6.62-5.423 12.04-12.04 12.04-2.002-.001-3.972-.5-5.787-1.451L0 24zm6.59-4.846c1.657.983 3.284 1.492 4.908 1.493 5.415 0 9.818-4.405 9.821-9.82.002-2.624-1.012-5.09-2.859-6.94C16.63 2.039 14.167 1.018 11.54 1.017 6.126 1.017 1.724 5.422 1.72 10.838c-.001 1.721.463 3.4 1.343 4.887l-.997 3.642 3.731-.977s.002-.001.003-.001zM17.47 15.35c-.322-.162-1.905-.94-2.202-1.049-.297-.108-.514-.162-.73.162-.217.324-.838 1.049-1.028 1.265-.19.217-.38.243-.7.08-1.748-.873-2.92-1.597-4.089-3.606-.309-.53.309-.492.884-1.64.096-.195.048-.364-.024-.526-.071-.162-.608-1.464-.833-2.006-.22-.53-.443-.457-.608-.466-.157-.008-.338-.01-.52-.01-.182 0-.476.068-.725.342-.249.274-.95 1.028-.95 2.508s1.077 2.906 1.226 3.109c.15.203 2.12 3.237 5.137 4.537.717.31 1.278.494 1.716.633.722.23 1.378.198 1.9.12.58-.088 1.905-.779 2.176-1.493.271-.716.271-1.329.19-1.453-.081-.124-.298-.186-.62-.348z"/>
     </svg>

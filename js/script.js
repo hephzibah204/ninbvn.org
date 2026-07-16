@@ -1,5 +1,5 @@
 /**
- * Eclat Synergy — Main JavaScript
+ * NIN-BVN Services — Main JavaScript
  * Navbar scroll, mobile menu, dropdowns, scroll reveal,
  * FAQ accordion, counter animation, WhatsApp FAB
  */
@@ -73,6 +73,7 @@ function initDropdowns() {
   });
 
   // Hover open for mega menu on desktop
+  let hoverTimeout;
   document.querySelectorAll('.has-mega-menu').forEach(li => {
     const toggle = li.querySelector('.nav-dropdown-toggle');
     const menu   = li.querySelector('.mega-menu');
@@ -80,6 +81,7 @@ function initDropdowns() {
 
     li.addEventListener('mouseenter', () => {
       if (window.innerWidth >= 769) {
+        clearTimeout(hoverTimeout);
         closeAllMenus();
         menu.classList.add('is-open');
         toggle.setAttribute('aria-expanded', 'true');
@@ -87,8 +89,10 @@ function initDropdowns() {
     });
     li.addEventListener('mouseleave', () => {
       if (window.innerWidth >= 769) {
-        menu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+        hoverTimeout = setTimeout(() => {
+          menu.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }, 300);
       }
     });
   });

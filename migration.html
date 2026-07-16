@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIN Database Migration Services | NIN-BVN Services</title>
+  <meta name="description" content="Need to migrate legacy records or link paper registration data to the active NIMC digital database? Learn about NIN database migration." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23006633'/><text y='22' x='5' font-size='18' fill='white' font-family='sans-serif' font-weight='bold'>M</text></svg>"/>
+  <link rel="stylesheet" href="css/style.prefixed.css?v=1.3"/>
+  <script defer src="js/script.es5.js"></script>
+  <link rel="canonical" href="https://ninbvn.org/migration.html" />
+  <meta property="og:title" content="NIN Database Migration Services | NIN-BVN Services" />
+  <meta property="og:description" content="Need to migrate legacy records or link paper registration data to the active NIMC digital database? Learn about NIN database migration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ninbvn.org/migration.html" />
+  <meta property="og:site_name" content="NIN-BVN Services" />
+  <meta property="og:image" content="https://ninbvn.org/images/og-cover.jpg" />
+  <meta name="theme-color" content="#0F172A" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <!-- ── Navbar ── -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/ninbvnlogo.jpg" alt="NIN-BVN Services Logo" class="logo-img"></a>
+      <nav aria-label="Main navigation">
+      <ul class="nav-menu" id="nav-menu">
+        <!-- 1. NIN Services (Mega Menu) -->
+        <li class="has-mega-menu">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            NIN Services
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="mega-menu" role="menu">
+            <div class="mega-inner" style="grid-template-columns: 1fr 1fr 280px;">
+              <div class="mega-col">
+                <div class="mega-col-heading">NIN Enrolment &amp; Modification</div>
+                <ul>
+                  <li><a href="nin.html"><span class="mega-link-icon">🪪</span> NIN Enrollment (Child/Adult)</a></li>
+                  <li><a href="nin-modification.html"><span class="mega-link-icon">✍️</span> Name Change</a></li>
+                  <li><a href="nin-modification.html"><span class="mega-link-icon">📅</span> Date of Birth Change</a></li>
+                  <li><a href="nin-suspension.html"><span class="mega-link-icon">🚫</span> NIN Suspension</a></li>
+                  <li><a href="migration.html"><span class="mega-link-icon">🔄</span> Migration</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-heading">NIN Search &amp; Print Slip</div>
+                <ul>
+                  <li><a href="nin-slip-retrieval.html"><span class="mega-link-icon">🔍</span> NIN Slip Retrieval</a></li>
+                  <li><a href="nin-lost-search.html"><span class="mega-link-icon">🔎</span> Lost NIN Search</a></li>
+                </ul>
+              </div>
+              <div class="mega-cta">
+                <h4 class="mega-cta-heading">NIN Help Desk</h4>
+                <p class="mega-cta-body">Fast-track retrievals and modifications directly with accredited agents.</p>
+                <a href="book-appointment.html" class="btn-primary" style="margin-top:0.5rem;">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 2. BVN Services (Dropdown Menu) -->
+        <li style="position: relative;">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            BVN Services
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <ul class="nav-dropdown">
+            <li><a href="bvn.html">BVN Enrollment</a></li>
+            <li><a href="bvn-lost-search.html">Lost BVN Search</a></li>
+          </ul>
+        </li>
+
+        <!-- Other Services (Dropdown Menu) -->
+        <li style="position: relative;">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Other Services
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <ul class="nav-dropdown">
+            <li><a href="passport.html">Passport Processing</a></li>
+            <li><a href="notarisation.html">Notarisation</a></li>
+          </ul>
+        </li>
+
+        <!-- 5. Become an Agent (Dropdown Menu) -->
+        <li style="position: relative;">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Become an Agent
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <ul class="nav-dropdown">
+            <li><a href="become-nin-agent.html">NIN Agent</a></li>
+            <li><a href="become-bvn-agent.html">BVN Agent</a></li>
+          </ul>
+        </li>
+
+        <!-- 4. Guides & Articles -->
+        <li><a href="blog.html">Guides &amp; Articles</a></li>
+
+        <!-- 6. Book Appointment (CTA Button) -->
+        <li><a href="book-appointment.html" class="btn-primary nav-cta">Book Appointment</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span aria-current="page">NIN Migration</span>
+      </nav>
+      <p class="page-hero-label">Legacy System to Active Portal</p>
+      <h1>NIN Database &amp; Record Migration</h1>
+      <p class="lead">Have your records been stuck on paper filings, legacy offline servers, or old telecom registry databases? We handle the secure data migration of your verified identity into the live NIMC central portal.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/447459788558?text=Hello%20NIN-BVN%20Services,%20I%20need%20assistance%20with%20NIN%20Migration." class="btn-primary" target="_blank" rel="noopener">💬 Start Record Migration (WhatsApp)</a>
+        <a href="book-appointment.html" class="btn-secondary">Book Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="section section-dark">
+      <div class="container">
+        <div class="longform-layout">
+          <nav class="toc" aria-label="Page contents">
+            <h2>On this page</h2>
+            <ul>
+              <li><a href="#what-is-migration">What is NIN Migration?</a></li>
+              <li><a href="#when-needed">When is Migration Required?</a></li>
+              <li><a href="#migration-process">The Migration Pipeline</a></li>
+              <li><a href="#faq">Frequently Asked Questions</a></li>
+            </ul>
+          </nav>
+
+          <article>
+            <section id="what-is-migration" class="content-section reveal">
+              <h2>What is NIN Migration?</h2>
+              <p>NIMC's database system has evolved over several iterations. "Migration" refers to pulling historical, archive, or pre-digital identification records (such as early-stage 2012–2014 paper card registrations, or disconnected local government area offline registries) and uploading them securely to the active, live NIMC Harmonized Database Portal.</p>
+            </section>
+
+            <section id="when-needed" class="content-section reveal">
+              <h2>When is Migration Required?</h2>
+              <p>You will need a record migration if:</p>
+              <ul class="docs-list">
+                <li><span class="check">✓</span> You registered for your identity card years ago, but the tracking code returns "Record Not Found" online.</li>
+                <li><span class="check">✓</span> Your profile is recorded on local offline servers in Nigeria but does not appear on the central database used by foreign missions and diaspora portals.</li>
+                <li><span class="check">✓</span> Your SIM card verification checks (NIN-SIM linkage) fail due to data mismatch errors between network providers and the NIMC active portal.</li>
+              </ul>
+            </section>
+
+            <section id="migration-process" class="content-section reveal">
+              <h2>The Migration Pipeline</h2>
+              <ol class="process-steps">
+                <li>
+                  <div>
+                    <strong>1. Document Verification</strong>
+                    <p>We verify your historical registration slip, birth attestation papers, and current passports to match names and database markers.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>2. Archive Query</strong>
+                    <p>Our backend operators execute search commands on legacy archive systems to locate and extract your biometric hashes and demographics.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>3. Digital Upload &amp; Harmonization</strong>
+                    <p>The extracted record is uploaded directly into the modern live database. A synchronized and active digital NIN slip is generated and delivered to you.</p>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+            <section id="faq" class="content-section reveal">
+              <h2>Frequently Asked Questions</h2>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">Do I need to do biometric recapture?
+                    <svg class="faq-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+                  </button>
+                  <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                      <p>If your legacy biometrics are successfully retrieved from the archives and meet current resolution specifications, they are migrated automatically. If the biometrics are damaged or missing, we will book a short biometric recapture session at our local center.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span class="js-year">2026</span> NIN-BVN Services. All rights reserved. Authorised NIMC Diaspora Enrolment Agent.</p>
+    </div>
+  </footer>
+</body>
+</html>

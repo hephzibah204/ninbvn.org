@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Eclat Synergy — Main JavaScript
+ * NIN-BVN Services — Main JavaScript
  * Navbar scroll, mobile menu, dropdowns, scroll reveal,
  * FAQ accordion, counter animation, WhatsApp FAB
  */
@@ -75,21 +75,25 @@ function initDropdowns() {
   });
 
   // Hover open for mega menu on desktop
-  document.querySelectorAll('.has-mega-menu').forEach(li => {
-    const toggle = li.querySelector('.nav-dropdown-toggle');
-    const menu = li.querySelector('.mega-menu');
+  var hoverTimeout;
+  document.querySelectorAll('.has-mega-menu').forEach(function(li) {
+    var toggle = li.querySelector('.nav-dropdown-toggle');
+    var menu = li.querySelector('.mega-menu');
     if (!toggle || !menu) return;
-    li.addEventListener('mouseenter', () => {
+    li.addEventListener('mouseenter', function() {
       if (window.innerWidth >= 769) {
+        clearTimeout(hoverTimeout);
         closeAllMenus();
         menu.classList.add('is-open');
         toggle.setAttribute('aria-expanded', 'true');
       }
     });
-    li.addEventListener('mouseleave', () => {
+    li.addEventListener('mouseleave', function() {
       if (window.innerWidth >= 769) {
-        menu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+        hoverTimeout = setTimeout(function() {
+          menu.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }, 300);
       }
     });
   });
